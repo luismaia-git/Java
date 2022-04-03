@@ -9,17 +9,18 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class Eventos extends JFrame implements ActionListener{
-    
+
     public Eventos() {
         super ("Meus eventos");
-
+        
         JButton botao = new JButton("Botao");
         botao.addActionListener(this);
 
+        
         getContentPane().add(botao);
 
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setSize(300, 300);
+		setSize(600, 300);
 		setVisible(true);
 
     }
